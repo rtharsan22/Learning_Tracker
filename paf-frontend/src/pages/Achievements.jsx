@@ -14,7 +14,7 @@ const Achievements = () => {
 
   const tabs = [
     { id: 'projects', label: 'Projects', template: 'Completed Project/Task' },
-    { id: 'certifications', label: 'Certifications', template: 'Certification/Qualification' },
+    // { id: 'certifications', label: 'Certifications', template: 'Certification/Qualification' },
     { id: 'challenges', label: 'Challenges', template: 'Challenges/Competitions' },
     { id: 'workshops', label: 'Workshops', template: 'Workshops/Bootcamps' }
   ];
@@ -180,7 +180,8 @@ const Achievements = () => {
   }
 
   return (
-    <div className="py-8 max-w-7xl mx-auto px-6">
+    <div className="py-8 max-w-7xl mx-auto px-6  bg-gradient-to-br from-blue-100 via-white to-blue-50">
+      {/* className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-white" */}
       <h1 className="text-2xl font-bold text-[#2b6cb0] mb-8 relative pl-4 flex items-center before:content-[''] before:absolute before:left-0 before:top-[10px] before:h-[65%] before:w-[5px] before:bg-[#0a9bdf] before:rounded-md">
         My Achievements
       </h1>
@@ -238,7 +239,7 @@ const Achievements = () => {
                   {renderTemplateDetails(progress)}
                 </div>
 
-                {progress.resourceLink && (
+                {/* {progress.resourceLink && (
                   <div className="px-4 pb-4">
                     <a 
                       href={progress.resourceLink} 
@@ -249,7 +250,7 @@ const Achievements = () => {
                       View Resource
                     </a>
                   </div>
-                )}
+                )} */}
 
                 {(progress.nextSteps || progress.reflection) && (
                   <div className="p-4 mt-4 bg-[rgba(245,249,255,0.5)] border-t border-[#e2e8f0]">

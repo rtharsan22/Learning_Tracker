@@ -236,7 +236,7 @@ const AddProgress = () => {
   return (
     <div className="py-8 px-4 max-w-7xl mx-auto">
       <div className="bg-white rounded-2xl shadow-md overflow-hidden max-w-3xl mx-auto">
-        <h1 className="text-center py-8 px-8 m2-0 text-4xl font-bold text-[#2b6cb0] bg-blue-50 bg-opacity-80 border-b border-gray-200 relative">
+        <h1 className="text-center py-8 px-8 m2-0 text-3xl font-bold text-[#2b6cb0] bg-blue-50 bg-opacity-80 border-b border-gray-200 relative">
           Add Learning Progress
         </h1>
         
@@ -252,10 +252,7 @@ const AddProgress = () => {
         
         <form onSubmit={handleSubmit}>
           <div className="py-6 px-8 border-b border-gray-200">
-            <h2 className="text-2xl font-semibold mb-6 text-[#2b6cb0] flex items-center">
-              <span className="inline-block w-5 h-0.5 bg-blue-500 mr-2 rounded"></span>
-              Basic Information
-            </h2>
+           
             
             <div className="mb-6">
               <label htmlFor="topic" className="block mb-2 font-medium text-gray-600">Topic</label>
@@ -276,7 +273,7 @@ const AddProgress = () => {
               <textarea
                 id="description"
                 name="description"
-                className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all bg-white min-h-32 resize-y"
+                className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all bg-white min-h-2 resize-y"
                 value={formData.description}
                 onChange={handleInputChange}
                 placeholder="Describe what you learned..."
@@ -344,7 +341,7 @@ const AddProgress = () => {
             )}
           </div>
 
-          <div className="py-6 px-8 border-b border-gray-200">
+          {/* <div className="py-6 px-8 border-b border-gray-200">
             <h2 className="text-2xl font-semibold mb-6 text-[#2b6cb0] flex items-center">
               <span className="inline-block w-5 h-0.5 bg-blue-500 mr-2 rounded"></span>
               Reflection
@@ -372,7 +369,7 @@ const AddProgress = () => {
                 placeholder="Reflect on your learning experience..."
               />
             </div>
-          </div>
+          </div> */}
           
           <div className="py-6 px-8 flex gap-4 justify-end bg-blue-50 bg-opacity-50">
             <button 
